@@ -302,6 +302,8 @@ margin-top: 50px;
 text-align: center;
 font-weight: lighter;
 font-size: 40px;
+line-height: 70px;
+font-family: 'PT Serif', serif;
 }
 
 .A-info p{
@@ -309,8 +311,12 @@ font-size: 40px;
     margin-left: 100px;
     text-align: center;
     width: 80%;
+    line-height: 30px;
     font-size: 20px;
   
+}
+section{
+    position: relative;
 }
 
 .conteiner-info { 
@@ -323,8 +329,12 @@ top:100vh ;
 }
 .conteiner-info-2{
 width: 50%;
+height: 500px;
 margin-left: 50px;
 font-family: 'Tiro Telugu', serif;
+overflow: auto;
+    white-space: wrap;
+    text-overflow: ellipsis
 }
 .conteiner-info-2 h2{
 color:#D7AECB ;
@@ -339,90 +349,91 @@ text-shadow: 1px 1px 1px #B555AA ;
 
 /* cards animadas */
 
-.cardAnimadas{
-    max-width: 1200px;
-    margin: 50px, auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    top: 180vh;
-}
-.contenedor_cards{
-    margin: 20px;
 
-}
-.contenedor_cards a{
-    display: inline-block;
-}
-
-.contenedor_cards:hover figure{
-
-    -webkit-transform: perspective(600px) rotateY(180deg);
-    -ms-transform:perspective(600px) rotateY(180deg) ;
-    -o-transform: perspective(600px) rotateY(180deg);
-    transform: perspective(600px) rotateY(180deg);
-
-    -webkit-box-shadow: -5px 7px 22px -11px rgba(0,0,0,0.53);
--moz-box-shadow: -5px 7px 22px -11px rgba(0,0,0,0.53);
-box-shadow: -5px 7px 22px -11px rgba(0,0,0,0.53);
-}
-
-.figureA{
-    width: 300px;
-    height: 350px;
-    margin: 0;
-    position: relative;
-    transition: all ease .5s;
-    transform-style: preserve-3d;
-    transform: perspective(600px) rotateY(0deg);
-}
-
- .cardA, .cardATrasera{
-   width:100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 5px;
-   transition: all ease .5s;
-
- 
-}
- .cardA{
-    display: block;
-}
-
-
- .cardAtrasera{
-    position: absolute;
-     top: 0; 
-     padding: 20px;
-     color: #ffffff;
-     font-size: 1.2em;
-     transform: perspective(600px) rotateY(180deg);
-     backface-visibility: hidden;
-     overflow: auto;
-     background-color: lightpink;
-    }
-
-.conteiner-op{
-    display: grid;
-    margin-top: 0;
-    grid-template-columns: repeat(3,300px);
-    grid-gap: 50px;
-    margin-left: 20px;
-    position: absolute;
-    top: 190vh;
-
-    font-family: 'Tiro Telugu', serif;
-}
 
 .conteiner-tit {
-    position: absolute;
+position: absolute;
     font-size: 25px;
     font-family: 'Tiro Telugu', serif;
     
     background-color: lemonchiffon;
     color: #E08582;
-    top:170vh;
+    
+    top:180vh;
+}
+
+.conteiner-card{
+max-width: 1200px;
+margin: auto;
+margin-top: 200vh;
+perspective: 600px;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.card-father{
+    margin: 50px;
+   
+
+}
+.card-father:hover .card2{
+    transform: rotateY(180deg);
+}
+.card2{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    transform-style:preserve-3d;
+    transition: all ease 600ms;
+}
+.card-front{
+   background-size: cover;
+   background-position: center;
+}
+
+.card-front , .card-back{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+top: 0;
+left: 0;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+
+}
+.card-back{
+    transform: rotateY(180deg);
+    background-color: lightpink;
+    color: white;
+}
+.body-card-front{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    transform: translateZ(60px);
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.2);
+}
+.body-card-back{
+padding: 15px;
+
+}
+.body-card-back p{
+    margin-top: 20px; 
+    font-size: 1.2em;
+    color: #ffffff;
+    background-color: lightpink
 }
