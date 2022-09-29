@@ -36,7 +36,7 @@ sup=`
                         </ul>
                 </li>
                 <li><a href="ver-mas.html">Aprender</li>
-                <li><a href="#cuenta">Contacto</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
     
             </ul>
 </nav>
@@ -44,3 +44,31 @@ sup=`
 `
 document.write(sup)
 
+sup=`
+<footer>
+         <div class="contenido-footer">    
+            <a class="brand" href="index.html">
+               <img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare
+            </a>          
+            <p>Skincare es la rutina y los tratamientos que se hacen para el cuidado de la piel, permitiendo mejorar su apariencia.</p>                     
+         </div>
+
+         <div class="contenido-footer"> 
+            <p>INTEGRANTES:</p>               
+            <ul>
+               <li><a href="contacto.html"><i class="fa-sharp fa-solid fa-user"></i>Mercedes Llanos Pontaut</a></li>
+               <li><a href="contacto.html"><i class="fa-sharp fa-solid fa-user"></i>Mónica Rossi</a></li>
+               <li><a href="contacto.html"><i class="fa-sharp fa-solid fa-user"></i>Micaela Ruscitto</a></li>
+            </ul>
+         </div>
+
+         <div class="contenido-footer">
+            <a href="">
+               <img width="100px" src="./css/imagenes/codoacodo.png">
+            </a>
+            <p>Proyecto Codo a Codo 2022 <br>
+            TPO Desarrollo Web HTML CS y JS</p>           
+         </div>
+      </footer>
+`
+document.write(sup)
