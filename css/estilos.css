@@ -5,22 +5,23 @@
 }
 
 a {
-    text-decoration: none;
-    list-style-type:none;    
+    text-decoration: none; 
+    /* list-style: none; */
     color: rgb(255, 255, 255);
 }
-ul {
+/*ul {
     margin: 0;
     padding: 0;
-}
+}*/
 header {
-    display: flex;
+    /*display: flex;
     justify-content: space-between;
+    */
     text-align: center;
-    padding: 0px 8%;
     background-color: rgba(188,132,126,0.5);
     position: fixed;
-    top: 0; left: 0; right: 0;    
+    top: 0; left: 0; right: 0;  
+    padding: 0.5em 2em 0em 0em;  
 }
 
 /*
@@ -40,37 +41,38 @@ main{
     align-items: center;
     transition: 0.5s ease-in-out;    
 }
-.brand img {
-    margin-right: 10px;
-}
+
 .brand:hover {
     transform: scale(1.1, 1.1);
+    
     transition: 0.8s ease-in-out;
 }
 
-
-
-.navegacion ul {
+/*
+.menu {
     list-style: none;
  
-}
+}*/
 
 
-.menu>li {
+.menu-li {
     position: relative;
-    display: inline-block;
+    /* display: inline-block; */
+    list-style: none;
 
 }
-
-.menu>li>a {
-    display: block;
-    padding: 15px 20px;
+.menu-pad{
+    padding: 20px 0px;
+}
+.menu-a {
+    /*display: block;*/
     color: azure;
     font-family: 'Raleway', sans-serif;
+    font-size: larger;
     text-decoration: none;
 }
 
-.menu li a:hover {
+.menu-a:hover {
     color: lightpink;
     text-shadow: 1px 1px 1px grey;
     transition: all .3s;
@@ -85,10 +87,11 @@ main{
     transition: opacity 1.5s;
     width: 100%;
     z-index: 1000;
+    list-style: none;
 
 }
 
-.submenu li a {
+.submenu-a {
     display: block;
     padding: 15px;
     color: white;
@@ -96,7 +99,7 @@ main{
     text-decoration: none;
 }
 
-.menu li:hover .submenu {
+.menu-li:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
@@ -149,7 +152,7 @@ nav a.active {
 }
 #portada .button{
     margin: 25px auto 0;
-    position:relative;
+    /*position:relative;*/
     animation: animation 2.5s ease-in-out;
     display: block;
     width: 30%;
@@ -185,7 +188,7 @@ nav a.active {
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    position:relative;
+    /*position: relative;*/
     animation: animation 2s ease-out;
 }
 .tit1 span {
@@ -198,7 +201,7 @@ nav a.active {
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    position:relative;
+    /*position:relative;*/
     animation: animation 2.5s ease-out;
 }  
 
@@ -241,7 +244,7 @@ nav a.active {
 }
 .bloque-tema img {
     height: 400px;
-    position: relative;
+    /* position: relative; */
     right: 20%;
 }
 .bloque-tema h3 {
@@ -693,6 +696,39 @@ footer img:hover {
 
 
 /*Media queries*/
+[class*="col-"]{
+    float: left;
+}
+@media only screen and (max-width: 992px){
+    .col-m-1 {width : 8.33%;} 
+    .col-m-2 {width : 16.66%;}
+    .col-m-3 {width : 25%;}
+    .col-m-4 {width : 33.33%;}
+    .col-m-5 {width : 41.66%;}
+    .col-m-6 {width : 50%}  ;  
+    .col-m-7 {width : 58.33%;}
+    .col-m-8 {width : 66.66%;}
+    .col-m-9 {width : 75%;}
+    .col-m-10 {width : 83.33%;}
+    .col-m-11 {width : 91.66%;}
+    .col-m-12 {width : 100%;}
+}
+
+@media only screen and (min-width: 992px){
+    .col-1 {width : 8.33%;} 
+    .col-2 {width : 16.66%;}
+    .col-3 {width : 25%;}
+    .col-4 {width : 33.33%;}
+    .col-5 {width : 41.66%;}
+    .col-6 {width : 50%}  ;  
+    .col-7 {width : 58.33%;}
+    .col-8 {width : 66.66%;}
+    .col-9 {width : 75%;}
+    .col-10 {width : 83.33%;}
+    .col-11 {width : 91.66%;}
+    .col-12 {width : 100%;}
+}
+/*
 @media screen and (max-width: 600px){   
     .bloque-tema img {
         right: 40%;
@@ -727,3 +763,4 @@ footer img:hover {
 
 @media screen and (max-width: 1200px){    
 }
+*/
