@@ -102,7 +102,7 @@ sup=`
                <img width="100px" src="./css/imagenes/codoacodo.png">
             </a>
             <p>Proyecto Codo a Codo 2022 <br>
-            TPO Desarrollo Web HTML CS y JS</p>           
+            TPO Desarrollo Web HTML CSS y JS</p>           
          </div>
 </footer>
 `
