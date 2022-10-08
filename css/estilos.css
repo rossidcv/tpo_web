@@ -44,7 +44,7 @@ main{
 
 .brand:hover {
     transform: scale(1.1, 1.1);
-    
+    color: white;
     transition: 0.8s ease-in-out;
 }
 
@@ -66,7 +66,7 @@ main{
 }
 .menu-a {
     /*display: block;*/
-    color: azure;
+    color: none;
     font-family: 'Raleway', sans-serif;
     font-size: larger;
     text-decoration: none;
@@ -88,6 +88,7 @@ main{
     width: 100%;
     z-index: 1000;
     list-style: none;
+    padding: 0%;
 
 }
 
@@ -663,6 +664,49 @@ textarea.form-control:focus {
     border-color: #E08582;
 }
 
+/*TEST DE PIEL*/
+.t-backg{
+    background-color: #f6d6d6;
+    padding: 0ch;
+    margin: 5em 0em 0em 0em;
+    padding: 1em 0em 1em;
+    border-bottom: 1px solid #BE837F;;
+}
+.t-title{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: #d8a09c;
+}
+.t-sub{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #d8a09c;
+}
+
+.t-steps-h{
+    padding: 0.5em 0.5em 0em;
+    text-align: center;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    color:#c78590 ;
+}
+
+.t-steps-txt{
+    padding: 0.5em;
+    font-weight: 600;
+    font-family: 'Raleway', sans-serif;
+    color: #c48783;
+}
+.t-steps-bkg{
+    border-right: 3px solid #ebbac1;
+    border-left: 3px solid #ebbac1;
+    background-color: #ebbac1;
+}
+
+
+
 /*FOOTER*/
 footer {
     background-color: #BE837F;
@@ -741,6 +785,13 @@ footer img:hover {
     .col-m-10 {width : 83.33%;}
     .col-m-11 {width : 91.66%;}
     .col-m-12 {width : 100%;}
+    /*TEST*/
+    .t-backg {margin: 9em 0em 0em; padding: 1em 0em 0em;}
+    .t-steps-bkg2{
+        border-top: 3px solid #BE837F;
+        border-bottom: 3px solid #BE837F;
+        background-color: #ebbac1;
+    } 
 }
 
 @media only screen and (min-width: 992px){
@@ -756,6 +807,12 @@ footer img:hover {
     .col-10 {width : 83.33%;}
     .col-11 {width : 91.66%;}
     .col-12 {width : 100%;}
+    /*TEST*/
+    .t-steps-bkg2{
+        border-right: 3px solid #BE837F;
+        border-left: 3px solid #BE837F;
+        background-color: #ebbac1;
+    } 
 }
 
 @media screen and (max-width: 992px){   
