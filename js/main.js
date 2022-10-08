@@ -1,19 +1,3 @@
-// sup = `
-// <header>                
-// <a class="brand" href="index.html">
-// <img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare
-// </a>               
-// <nav>            
-// <ul>                      
-//     <li><a class="active" href="index.html">Inicio</a></li>
-//     <li><a href="#">Cuidados de la piel</a></li>
-//     <li><a href="#">Aprender</a></li>
-//     <li><a href="contacto.html">Contacto</a></li>
-// </ul>    
-// </nav>        
-//     </header>
-// `
-
 /*
 sup=`
 <header>
@@ -43,8 +27,9 @@ sup=`
 </header>
 `
 */
+
 sup=`
-<header>
+   <header>
       <div>
          <div class="col-4 col-m-12">
             <a class="brand" href="index.html"><img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare</a>
@@ -55,19 +40,19 @@ sup=`
                   <li class="menu-li"><a href="index.html" class="menu-a">Inicio</a></li>
                </div>
                <div class="col-3 col-m-3 menu-pad">
-                  <li class="menu-li" ><a href="#" class="menu-a">Cuidados de la piel</a>
+                  <li class="menu-li" ><a href="ver-mas.html" class="menu-a">Aprender</a>
                      <ul class="submenu">
                         <li class="submenu-li" ><a href="#" class="submenu-a">Piel Mixta</a></li>
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Piel Grasa</a></li>
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Piel Seca</a></li>
+                        <li class="submenu-li" ><a href="./piel-grasa.html" class="submenu-a">Piel Grasa</a></li>
+                        <li class="submenu-li" ><a href="./piel-seca.html" class="submenu-a">Piel Seca</a></li>
                         <li class="submenu-li" ><a href="#" class="submenu-a">Piel Sensible</a></li>
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Envejecimiento</a></li>
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Con Acne</a></li>
+                        <li class="submenu-li" ><a href="./envejecimiento.html" class="submenu-a">Envejecimiento</a></li>
+                        <li class="submenu-li" ><a href="./Piel-con-acne.html" class="submenu-a">Con Acne</a></li>
                      </ul>
                   </li>
                </div>
                <div class="col-3 col-m-3 menu-pad">
-                  <li class="menu-li"><a href="ver-mas.html" class="menu-a">Aprender</li>
+                  <li class="menu-li"><a href="./test.html" class="menu-a">Test de piel</li>
                </div>
                <div class="col-3 col-m-3 menu-pad ">
                   <li class="menu-li" ><a href="contacto.html" class="menu-a" >Contacto</a></li>
