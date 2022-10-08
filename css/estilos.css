@@ -406,7 +406,7 @@ margin-top: 15px;
 
 
 .imgInfo{
- width: 500px;
+ width: 50%;
  object-fit: cover;
 }
 
@@ -473,21 +473,32 @@ text-shadow: 1px 1px 1px #B555AA ;
 
 
 .conteiner-tit {
-position: absolute;
+position: relative;
+max-width: 1200px;
+width: 100%;
+padding: 30px 15px;
+margin: 0 auto;
+
     font-size: 35px;
     font-family: letra ;
     font-size: bold;
    
     color: black;
     
-    top:165vh;
+    top:170vh;
+
 }
-.conteiner-tit::first-letter{
+.h2-1::first-letter{
     color: #B555AA;
 }
+.h2-1{
+    position:relative ;
+    left: 70vh;
+    font-size: bold; 
+}
 .h2-2{
-   
-    margin-left: 200px;
+    position: relative;
+    left:100vh;
     color:rgb(100,180,177);
     font-size: bold;
 }
@@ -501,7 +512,7 @@ strong{
 .conteiner-card{
 max-width: 1200px;
 margin: auto;
-margin-top: 190vh;
+margin-top: 170vh;
 perspective: 600px;
 display: flex;
 justify-content: center;

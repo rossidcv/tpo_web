@@ -70,7 +70,7 @@ sup=`
             <a class="brand" href="index.html">
                <img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare
             </a>          
-            <p>Skincare es la rutina y los tratamientos que se hacen para el cuidado de la piel, permitiendo mejorar su apariencia.</p>                     
+            <p>La rutina Skincare son aquellos tratamientos que se realizan para el cuidado de nuestra piel, permitiendo asi mantener su salud y mejorar su apariencia.</p>                     
          </div>
 
          <div class="contenido-footer"> 
