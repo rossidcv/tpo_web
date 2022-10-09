@@ -42,10 +42,10 @@ sup=`
                <div class="col-3 col-m-3 menu-pad">
                   <li class="menu-li" ><a href="ver-mas.html" class="menu-a">Aprender</a>
                      <ul class="submenu">
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Piel Mixta</a></li>
+                        <li class="submenu-li" ><a href="./piel-Mixta.html" class="submenu-a">Piel Mixta</a></li>
                         <li class="submenu-li" ><a href="./piel-grasa.html" class="submenu-a">Piel Grasa</a></li>
                         <li class="submenu-li" ><a href="./piel-seca.html" class="submenu-a">Piel Seca</a></li>
-                        <li class="submenu-li" ><a href="#" class="submenu-a">Piel Sensible</a></li>
+                        <li class="submenu-li" ><a href="./piel-sensible.html" class="submenu-a">Piel Sensible</a></li>
                         <li class="submenu-li" ><a href="./envejecimiento.html" class="submenu-a">Envejecimiento</a></li>
                         <li class="submenu-li" ><a href="./Piel-con-acne.html" class="submenu-a">Con Acne</a></li>
                      </ul>
@@ -70,7 +70,7 @@ sup=`
             <a class="brand" href="index.html">
                <img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare
             </a>          
-            <p>Skincare es la rutina y los tratamientos que se hacen para el cuidado de la piel, permitiendo mejorar su apariencia.</p>                     
+            <p>La rutina Skincare son aquellos tratamientos que se realizan para el cuidado de nuestra piel, permitiendo asi mantener su salud y mejorar su apariencia.</p>                     
          </div>
 
          <div class="contenido-footer"> 
