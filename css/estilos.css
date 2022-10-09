@@ -861,3 +861,15 @@ footer img:hover {
 }
 */
 }
+
+
+
+.pielSensibleFactores ul{
+list-style-type: disc;
+list-style-position: inside;
+color: rgb(100,180,177) ;
+}
+
+.pielSensibleFactores span{
+    color: black;
+}
