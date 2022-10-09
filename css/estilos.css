@@ -786,7 +786,7 @@ footer img:hover {
     .col-m-11 {width : 91.66%;}
     .col-m-12 {width : 100%;}
     /*TEST*/
-    .t-backg {margin: 9em 0em 0em; padding: 1em 0em 0em;}
+    .t-backg {margin: 9em 0em 0em; padding: 1em 0em 1em;}
     .t-steps-bkg2{
         border-top: 3px solid #BE837F;
         border-bottom: 3px solid #BE837F;
