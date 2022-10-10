@@ -679,9 +679,9 @@ textarea.form-control:focus {
 .t-backg{
     background-color: #f6d6d6;
     padding: 0ch;
-    margin: 5em 0em 0em 0em;
-    padding: 1em 0em 1em;
-    border-bottom: 1px solid #BE837F;;
+    margin: 0em 0em 0em 0em;
+    padding: 6em 0em 1em;
+    border-bottom: 1px solid #BE837F;
 }
 .t-title{
     text-align: center;
@@ -716,6 +716,47 @@ textarea.form-control:focus {
     background-color: #ebbac1;
 }
 
+.t-form{
+    border-top: 1px solid #BE837F;
+    padding: 0.5em 1em 0.5em;
+    background-color:#f6d6d6;
+    text-align: center;
+}
+.t-answ{
+    padding: 1em 0em 0em;
+}
+.t-label{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    background-color: none;
+    color: #ac747d;
+}
+.t-input{ 
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    color: #ac747d;
+    border: 1px solid #BE837F ;
+    border-radius: 5px;
+    padding: 0.2em 5em;
+    background-color:#f7e6e6 ;
+}
+.t-e-btn{
+    padding: 1em 0em;
+}
+.t-btn{
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    color: #a15360;
+    font-weight: 600;
+    font-size: medium;
+    padding: 1em;
+    border: 1px solid  #BE837F;
+    background-color: #ebbac1;
+    border-radius: 5px;
+}
+.t-btn:hover{
+    background-color: #f4cccc;
+}
 
 
 /*FOOTER*/
@@ -796,12 +837,14 @@ footer img:hover {
     .col-m-10 {width : 83.33%;}
     .col-m-11 {width : 91.66%;}
     .col-m-12 {width : 100%;}
+    /**/
+    .bloque-img {
+        margin: 0
+    }
     /*TEST*/
-    .t-backg {margin: 9em 0em 0em; padding: 1em 0em 1em;}
-    .t-steps-bkg2{
-        border-top: 3px solid #BE837F;
-        border-bottom: 3px solid #BE837F;
-        background-color: #ebbac1;
+    .t-backg {padding: 10em 0em 1em;}
+    .t-s-marg{
+        border-top: 3px solid #BE837F; border-bottom: 3px solid #BE837F;
     } 
 }
 
@@ -819,16 +862,9 @@ footer img:hover {
     .col-11 {width : 91.66%;}
     .col-12 {width : 100%;}
     /*TEST*/
-    .t-steps-bkg2{
-        border-right: 3px solid #BE837F;
-        border-left: 3px solid #BE837F;
-        background-color: #ebbac1;
+    .t-s-marg{
+        border-right: 3px solid #BE837F; border-left: 3px solid #BE837F;
     } 
-}
-
-@media screen and (max-width: 992px){   
-    .bloque-img {
-        margin: 0;
 }
 /*
 @media screen and (max-width: 768px){
@@ -860,7 +896,7 @@ footer img:hover {
 @media screen and (max-width: 1200px){    
 }
 */
-}
+
 
 
 
