@@ -32,7 +32,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quae illum impedit esse? Facere aperiam fugiat repudiandae id adipisci velit, aliquid fuga maxime fugit et eum odit, iste reprehenderit sed?</p>
                 </div>
             </div>
-            <div class="col-4 t-steps-bkg2">
+            <div class="col-4 t-steps-bkg t-s-marg">
                 <div class="t-steps-h">
                     <h4>Paso 2</h4>
                 </div>
@@ -50,8 +50,45 @@
             </div>
         </div>
 
-        <div>
-            
+        <div class="t-form col-12 col-m-12">
+            <form action="/formulario" method="dialog">
+                <div class="t-answ col-6 col-m-12">
+                    <label for="type" class="t-label">Como es su piel?</label><br>
+                    <select class="t-input" id="type">
+                        <option value=""></option>
+                        <option value="grasa">Grasa</option>
+                        <option value="seca">Seca</option>
+                        <option value="mixta">Mixta</option>
+                    </select>
+                </div>
+                <div class="t-answ col-6 col-m-12">
+                    <label for="type" class="t-label">Su piel es sensible?</label><br>
+                    <select class="t-input" id="sensitivity">
+                        <option class="t-option" value=""></option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="t-answ col-6 col-m-12">
+                    <label for="type" class="t-label">Posee acne?</label><br>
+                    <select class="t-input" id="acne">
+                        <option value=""></option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="t-answ col-6 col-m-12">
+                    <label for="type" class="t-label">Posee signos de envejecimiento?</label><br>
+                    <select class="t-input"id="type" >
+                        <option value=""></option>
+                        <option value="si">Si</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="t-e-btn col-12 col-m-12">
+                    <button class="t-btn" type="submit">Enviar</button>
+                </div>
+            </form>
         </div>
     </main>
 
