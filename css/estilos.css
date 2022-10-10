@@ -695,27 +695,23 @@ textarea.form-control:focus {
     font-weight: 600;
     color: #d8a09c;
 }
-
 .t-steps-h{
-    padding: 0.5em 0.5em 0em;
-    text-align: center;
-    font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
     color:#c78590 ;
-}
+    text-align: center;
+    font-size: 1.5em;
+    padding: 0.5em 0.5em 0em;
 
+}
 .t-steps-txt{
-    padding: 0.5em;
-    font-weight: 600;
     font-family: 'Raleway', sans-serif;
     color: #c48783;
+    font-weight: 600;
+    padding: 0.5em;
 }
 .t-steps-bkg{
-    border-right: 3px solid #ebbac1;
-    border-left: 3px solid #ebbac1;
     background-color: #ebbac1;
 }
-
 .t-form{
     border-top: 1px solid #BE837F;
     padding: 0.5em 1em 0.5em;
@@ -756,6 +752,46 @@ textarea.form-control:focus {
 }
 .t-btn:hover{
     background-color: #f4cccc;
+}
+
+/*Resultados del test*/
+.t-warn{
+    background-color:#f6d6d6;
+}
+.t-warn-txt{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: #e03955;
+    padding: 0em 0em 1em;
+}
+.t-cards{
+    background-color:#f6d6d6;
+    padding: 0em 0.5em 0.5em;
+}
+.t-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #ebbac1;
+}
+.t-cardPad{
+    padding: 0.5em;
+}
+.t-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.t-card-cont {
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    color: #a15360;
+    padding: 0.5em;
+}
+.t-card-title{
+    font-size: larger;
+    font-weight: 600;
+}
+.t-card-txt{
+    font-weight: 500;
 }
 
 
@@ -866,6 +902,21 @@ footer img:hover {
         border-right: 3px solid #BE837F; border-left: 3px solid #BE837F;
     } 
 }
+@media only screen and (max-width: 600px){
+    .col-sm-1 {width : 8.33%;} 
+    .col-sm-2 {width : 16.66%;}
+    .col-sm-3 {width : 25%;}
+    .col-sm-4 {width : 33.33%;}
+    .col-sm-5 {width : 41.66%;}
+    .col-sm-6 {width : 50%}  ;  
+    .col-sm-7 {width : 58.33%;}
+    .col-sm-8 {width : 66.66%;}
+    .col-sm-9 {width : 75%;}
+    .col-sm-10 {width : 83.33%;}
+    .col-sm-11 {width : 91.66%;}
+    .col-sm-12 {width : 100%;}
+}
+
 /*
 @media screen and (max-width: 768px){
     header, nav li{

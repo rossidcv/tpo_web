@@ -1,0 +1,47 @@
+{
+    
+    "tSkin":[
+        {
+            "name": "Tratamiento de piel grasa",
+            "content":"La forma correcta de tratar este tipo de pieles es..."
+        },
+        {
+            "name": "Tratamiento de piel seca",
+            "content":"La forma correcta de tratar este tipo de pieles es..."
+        },
+        {
+            "name": "Tratamiento de piel mixta",
+            "content":"La forma correcta de tratar este tipo de pieles es..."
+        }
+    ],
+    "tAcne":[
+        {
+            "name": "Tratamiento del acne",
+            "content": "La forma correcta de tratar este tipo de pieles es..."
+        },
+        {
+            "name": "Prevension del acne",
+            "content": "La forma correcta de prevenir este tipo de pieles es..."
+        }
+    ],
+    "tSense":[
+        {
+            "name": "Cuidados para piel sensible",
+            "content": "La forma correcta de cuidar este tipo de pieles es..."
+        },
+        {
+            "name": "Cuidados para piel no sensible",
+            "content": "La forma correcta de cuidar este tipo de pieles es..."
+        } 
+    ],
+    "tOld": [
+        {
+            "name": "Cuidados para los signos de envejecimiento",
+            "content": "La forma correcta de cuidar este tipo de pieles es..."
+        },
+        {
+            "name": "Prevencion de arrugas",
+            "content": "La forma correcta de prevenir este tipo de pieles es..."
+        } 
+    ]
+}
