@@ -4,45 +4,46 @@ const data = `{
     "tSkin":[
         {
             "name": "Tratamiento de piel grasa",
-            "content":"La forma correcta de tratar este tipo de pieles es..."
+            "content":"Si tu piel es grasa debes prestar atención a tus lavados lo recomendable es realizar uno por la mañana y otro por la noche como así también máximo dos exfoliaciones a la semana.  Los productos hidratantes deben ser en gel y no utilizar solo aquellos que sean matificantes o tendientes a secar la piel, ya que provocaran el efecto contrario debido a que la misma comenzará a producir más grasa para contrarrestar el efecto."
+            
         },
         {
             "name": "Tratamiento de piel seca",
-            "content":"La forma correcta de tratar este tipo de pieles es..."
+            "content":"Es importante que las lociones, cremas o bálsamos que uses para hidratar tu piel después del baño contengan lípidos fisiológicos, como las ceramidas, el colesterol y los ácidos grasos esenciales como el ácido hialurónico. También se recomienda que tengan otros activos que aporten o retengan la humedad."
         },
         {
             "name": "Tratamiento de piel mixta",
-            "content":"La forma correcta de tratar este tipo de pieles es..."
+            "content":"En el caso de utilizar solo un producto hidratante buscar aquellos que sean libres de aceites para poder usarlos en la zona T. En casos que sientas la piel tirante o reseca después de la hidratación en la zona de las mejillas puedes reforzar con otra crema hidratante que contenga coenzima Q10 y/o resveratrol."
         }
     ],
     "tAcne":[
         {
             "name": "Tratamiento del acne",
-            "content": "La forma correcta de tratar este tipo de pieles es..."
+            "content": "Lo primero que debes evaluar en caso de tener acné es su causa, por lo cual lo recomendable es acudir a un dermatólogo que pueda abordar el problema de forma profunda y el mismo te recetará los productos adecuados para realizar tu rutina de skincare"
         },
         {
             "name": "Prevension del acne",
-            "content": "La forma correcta de prevenir este tipo de pieles es..."
+            "content": "La forma correcta de prevenir el acné es usando productos seborreguladores como el ácido glicólico o el ácido salicílico. No se recomienda el uso de mascarillas peel off para quitar los puntos negros lo mejor es prevenirlos manteniendo los poros limpios"
         }
     ],
     "tSense":[
         {
             "name": "Cuidados para piel sensible",
-            "content": "La forma correcta de cuidar este tipo de pieles es..."
+            "content": "Si tu piel es sensible, algunos de los mejores activos son la niacinamida que ayuda a reparar la barrera cutánea, la centella asiática, calmante y cicatrizante, además de ayudar a mantener la humedad en la piel, el pantenol, con propiedades hidratantes, emolientes y antiinflamatorias"
         },
         {
             "name": "Cuidados para piel no sensible",
-            "content": "La forma correcta de cuidar este tipo de pieles es..."
+            "content": "Si tu piel no es sensible no significa que debas prestarle menos atención a su cuidado. No olvidez cuidar la barrera cutánea usando productos acordes a tu tipo de piel y siempre protegerla del sol"
         } 
     ],
     "tOld": [
         {
             "name": "Cuidados para los signos de envejecimiento",
-            "content": "La forma correcta de cuidar este tipo de pieles es..."
+            "content": "En el caso de poseer signos de envejecimiento se recomienda usar productos con activos como el ácido hialurónico, retinol y vitamina c. El retinol es uno de los ingredientes antiedad más recomendados por los dermatólogos, ya que Complementa el proceso de renovación de la superficie de la piel minimizando la apariencia de las manchas de la edad y la vitamina C recupera la luminosidad de la misma"
         },
         {
             "name": "Prevencion de arrugas",
-            "content": "La forma correcta de prevenir este tipo de pieles es..."
+            "content": "Un factor muy importante para prevenir arrugas y signos de envejecimiento es la protección solar. Los rayos UVA y UVB favorecen la aparición de las temidas manchas, así como la activación de metaloproteasas que degradan la matriz (fibras de colágeno, elastina y de ácido hialurónico), generando como consecuencia la aparición de las temidas arrugas. Además, los rayos solares favorecen la generación de radicales libres que atacan a diferentes componentes de las células de la piel, destruyendo las fibras de colágeno. "
         } 
     ]
 }`
@@ -108,7 +109,7 @@ function getSelectValue(){
                         <h4>${jsonData.tSkin[t].name}</h4>
                     </div>
                     <div class="t-card-txt" >
-                        <p>${jsonData.tSkin[t].content}. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati dolorem? Incidunt dolorem similique impedit ex distinctio, eaque molestiae a saepe temporibus maxime nesciunt modi esse blanditiis quisquam eos eligendi?</p>
+                        <p>${jsonData.tSkin[t].content}. </p>
                     </div>
                 </div>
             </div>
@@ -121,7 +122,7 @@ function getSelectValue(){
                         <h4>${jsonData.tSense[s].name}</h4>
                     </div>
                     <div class="t-card-txt" >
-                        <p>${jsonData.tSense[s].content}. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati dolorem? Incidunt dolorem similique impedit ex distinctio, eaque molestiae a saepe temporibus maxime nesciunt modi esse blanditiis quisquam eos eligendi?</p>
+                        <p>${jsonData.tSense[s].content}. </p>
                     </div>
                 </div>
             </div>
@@ -136,7 +137,7 @@ function getSelectValue(){
                         <h4>${jsonData.tAcne[a].name}</h4>
                     </div>
                     <div class="t-card-txt" >
-                        <p>${jsonData.tAcne[a].content}. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati dolorem? Incidunt dolorem similique impedit ex distinctio, eaque molestiae a saepe temporibus maxime nesciunt modi esse blanditiis quisquam eos eligendi?</p>
+                        <p>${jsonData.tAcne[a].content}. </p>
                     </div>
                 </div>
             </div>
@@ -149,7 +150,7 @@ function getSelectValue(){
                         <h4>${jsonData.tOld[o].name}</h4>
                     </div>
                     <div class="t-card-txt" >
-                        <p>${jsonData.tOld[o].content}. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, obcaecati dolorem? Incidunt dolorem similique impedit ex distinctio, eaque molestiae a saepe temporibus maxime nesciunt modi esse blanditiis quisquam eos eligendi?</p>
+                        <p>${jsonData.tOld[o].content}. </p>
                     </div>
                 </div>
             </div>
