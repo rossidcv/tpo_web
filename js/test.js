@@ -9,31 +9,31 @@ const data = `{
         },
         {
             "name": "Tratamiento de piel seca",
-            "content":"Es importante que las lociones, cremas o bálsamos que uses para hidratar tu piel después del baño contengan lípidos fisiológicos, como las ceramidas, el colesterol y los ácidos grasos esenciales como el ácido hialurónico. También se recomienda que tengan otros activos que aporten o retengan la humedad."
+            "content":"Es importante que las lociones, cremas o bálsamos que uses para hidratar tu piel después del baño contengan lípidos fisiológicos, como las ceramidas, el colesterol y los ácidos grasos esenciales como el ácido hialurónico. También se recomienda que tengan otros activos que aporten o retengan la humedad. Intenta no demorar tanto en la ducha, elegir telas de fibras naturales como asi tambien los jabones, desodorantes, tonificantes y perfumes que no contengan alcohol, el uso de humidificadores tambien puede resultar beneficioso "
         },
         {
             "name": "Tratamiento de piel mixta",
-            "content":"En el caso de utilizar solo un producto hidratante buscar aquellos que sean libres de aceites para poder usarlos en la zona T. En casos que sientas la piel tirante o reseca después de la hidratación en la zona de las mejillas puedes reforzar con otra crema hidratante que contenga coenzima Q10 y/o resveratrol."
+            "content":"La piel mixta resulta muchas veces complicada porque ya de por si es dificil cuidar nuestro rostro con un tipo de piel imagina tener dos. En el caso de utilizar solo un producto hidratante buscar aquellos que sean libres de aceites para poder usarlos en la zona T. En casos que sientas la piel tirante o reseca después de la hidratación en la zona de las mejillas puedes reforzar con otra crema hidratante que contenga coenzima Q10 y/o resveratrol."
         }
     ],
     "tAcne":[
         {
             "name": "Tratamiento del acne",
-            "content": "Lo primero que debes evaluar en caso de tener acné es su causa, por lo cual lo recomendable es acudir a un dermatólogo que pueda abordar el problema de forma profunda y el mismo te recetará los productos adecuados para realizar tu rutina de skincare"
+            "content": "Lo primero que debes evaluar en caso de tener acné es su causa, por lo cual lo recomendable es acudir a un dermatólogo que pueda abordar el problema de forma profunda y el mismo te recetará los productos adecuados para realizar tu rutina de skincare.Te recomedamos ser siempre suave con tu piel , no usar productos abrasivos , limpiar tu rostro con agua tibia, evitar las camas solares y prestar atencion a la proteccion contra los rayos uv, mantenerer la manos alejadas del rostro y siempre dejar que los granitos sanen naturalmente. "
         },
         {
             "name": "Prevension del acne",
-            "content": "La forma correcta de prevenir el acné es usando productos seborreguladores como el ácido glicólico o el ácido salicílico. No se recomienda el uso de mascarillas peel off para quitar los puntos negros lo mejor es prevenirlos manteniendo los poros limpios"
+            "content": "Por la noche, mientras dormimos, acumulamos sebo y células muertas en la superficie de la piel, que pueden obstruir los poros y crear el entorno perfecto para la formación de acné. La forma correcta de prevenir el acné es usando productos seborreguladores como el ácido glicólico o el ácido salicílico. No se recomienda el uso de mascarillas peel off para quitar los puntos negros lo mejor es prevenirlos manteniendo los poros limpios"
         }
     ],
     "tSense":[
         {
             "name": "Cuidados para piel sensible",
-            "content": "Si tu piel es sensible, algunos de los mejores activos son la niacinamida que ayuda a reparar la barrera cutánea, la centella asiática, calmante y cicatrizante, además de ayudar a mantener la humedad en la piel, el pantenol, con propiedades hidratantes, emolientes y antiinflamatorias"
+            "content": "Las pieles sensibles e intolerantes sufren una alteración en su función de barrera protectora. Este fenómeno favorece la pérdida de agua, por lo que la piel se  deshidrata y  facilita la penetración de agentes potencialmente irritantes. Si tu piel es sensible, algunos de los mejores activos son la niacinamida que ayuda a reparar la barrera cutánea, la centella asiática, calmante y cicatrizante, además de ayudar a mantener la humedad en la piel, el pantenol, con propiedades hidratantes, emolientes y antiinflamatorias"
         },
         {
             "name": "Cuidados para piel no sensible",
-            "content": "Si tu piel no es sensible no significa que debas prestarle menos atención a su cuidado. No olvidez cuidar la barrera cutánea usando productos acordes a tu tipo de piel y siempre protegerla del sol"
+            "content": " La estructura y características de la piel son dinámicas y acompañan cada etapa de nuestra vida de diferentes maneras, debido a la incidencia de distintos factores como el embarazo, la menopausia, algunos trastornos orgánicos o incluso el uso de ciertos fármacos, esta puede modificarse. Por eso es muy importante estar atentas a las señales que nos da nuestra dermis y usar productos específicos para nuestro tipo de piel, ya que esto ayudará a mantener el equilibrio necesario para que se encuentre saludable. "
         } 
     ],
     "tOld": [
