@@ -471,19 +471,21 @@ justify-content: space-evenly;
 margin-top:80px ;
 overflow: auto;
     white-space: wrap;
-    text-overflow: ellipsis
+ 
 
 }
 .conteiner-info-2{
 
 width: 50%;
 max-height: 500px;
-margin-left: 70px;
+margin-left: 50px;
+flex-wrap: wrap;
 font-family: 'Tiro Telugu', serif;
 
 }
 .conteiner-info-2 h2{
 color:#D7AECB ;
+width: 50%;
 text-shadow: 1px 1px 1px #B555AA ;
 }
 .img2{
@@ -492,11 +494,11 @@ width: 50%;
     
 }
 .img2 img{
-   width: 400px;
-    max-width: 400px;
-    max-height: 300px;
+    width: 400px;
+   max-width: 400px;
     object-fit: cover;
     margin-left: 80px;
+  
 }
 }
 
