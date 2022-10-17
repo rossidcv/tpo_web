@@ -6,7 +6,6 @@
 
 a {
     text-decoration: none; 
-    /* list-style: none; */
     color: rgb(255, 255, 255);
 }
 ul {
@@ -14,9 +13,7 @@ ul {
     padding: 0;
 }
 header {
-    /*display: flex;
-    justify-content: space-between;
-    */
+
     text-align: center;
     background-color: rgba(188,132,126,0.5);
     position: fixed;
@@ -24,15 +21,7 @@ header {
     padding: 0.5em 2em 0em 2em;  
 }
 
-/*
-main{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s;  
-}*/
+
 
 .brand {
     font-family: 'Raleway', sans-serif; 
@@ -183,7 +172,6 @@ main{
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-    /*position:relative;*/
     animation: animation 2.5s ease-out;
 }  
 
@@ -223,14 +211,11 @@ main{
     margin: 0 20px;
 }
 .bloque-tema {
-    /*max-width: 490px;*/
     text-align: center;
-    /*margin: 0 20px;*/
     overflow: hidden;
 }
 .bloque-tema img {
     height: 400px;
-    /* position: relative; */
     right: 20%;
     padding-right:20px ;
 }
@@ -250,8 +235,7 @@ main{
     line-height: 1.5rem;
     text-align: left;
 }
-.item{
-    /*max-width:350px; */   
+.item{  
     text-align:center;
     margin:10px;  
     box-shadow: 0px 1px 10px rgb(0 0 0 / 20%);
@@ -355,78 +339,54 @@ margin-top: 15px;
 .conteiner-banner{
     margin-top: 80px;
     background-color:rgb(248, 215, 198);
+  
+   
 }
+.imgInfo{
+object-fit: cover;
+}
+
 .A-info h1{
     font-family: 'Quicksand', sans-serif;
     text-align: center;
     font-weight: bolder;
     font-size: 40px;
-    padding: 0.2em 2em 0em 2em;
+    padding: 1.5em 2em 0.2em 2em;
+
+ 
 }
 .A-info p{
     padding: 0em 1.5em 0em 1.5em;
-    text-align: left;
-    margin-top: 15px;
+    text-align: center;
+     margin-top: 15px; 
     line-height: 30px;
-    font-size: 20px;
+    font-size: 21px;
+  
+  
 }
 .conteiner-info { 
     padding: 4em 0em;
-    /*
-    display: flex;
-    justify-content: space-evenly;
-    overflow: auto;
-    white-space: wrap;
-<<<<<<< HEAD
- 
 
-}
-.conteiner-info-2{
 
-width: 50%;
-max-height: 500px;
-margin-left: 50px;
-flex-wrap: wrap;
-font-family: 'Tiro Telugu', serif;
-
-}
-.conteiner-info-2 h2{
-color:#D7AECB ;
-width: 50%;
-text-shadow: 1px 1px 1px #B555AA ;
-=======
-    text-overflow: ellipsis*/
 }
 .conteiner-info-2{
     font-family: 'Tiro Telugu', serif;
     padding: 0em 2em 2em 2em;
-    /*width: 50%;
-    max-height: 500px;
-    margin-left: 70px;*/
 }
 .conteiner-info-2 h2{
     color:#D7AECB ;
     text-shadow: 1px 1px 1px #B555AA ;
 
 }
-/*.img2{
-    width: 50%;
-}
+
+
 .img2 img{
-    width: 400px;
-<<<<<<< HEAD
-   max-width: 400px;
-    object-fit: cover;
-    margin-left: 80px;
+
+   max-width: 500px;
+   object-fit: cover;
+    
   
 }
-}
-=======
-    max-width: 400px;
-    max-height: 300px;
-    object-fit: cover;
-    margin-left: 80px;
-}*/
 
 
 /* cards animadas */
@@ -462,10 +422,7 @@ strong{
 .conteiner-card{
     justify-content: center;
     padding: 2em 3em ;
-    /*margin: auto;
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;*/
+   
 }
 .card-father{
     padding: 0.5em ;

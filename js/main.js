@@ -62,3 +62,26 @@ sup=`
 </footer>
 `
 document.write(sup)
+
+
+// formulario de contacto
+
+const $form= document.querySelector('#form')
+$form.addEventListener('submit', handlesubmit)
+
+ async function handlesubmit(event){
+   event.preventDefault()   //evita que recargue la pagina
+   const form= new FormData(this)  // guarda los atos del formulario
+  const response= await fetch(this.action,{
+      method:this.method,
+      body: form,
+      headers: {
+         'Accept': 'application/json'     //como sera la respuesta
+
+      }
+   })
+   if(response.ok){
+      this.reset()         // para borrar los campos
+      alert('Gracias por contactarte con nosotros, te responderemos pronto')
+   }
+}
