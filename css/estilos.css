@@ -47,17 +47,8 @@ main{
     color: white;
     transition: 0.8s ease-in-out;
 }
-
-/*
-.menu {
-    list-style: none;
- 
-}*/
-
-
 .menu-li {
     position: relative;
-    /* display: inline-block; */
     list-style: none;
 
 }
@@ -65,7 +56,6 @@ main{
     padding: 20px 0px;
 }
 .menu-a {
-    /*display: block;*/
     color: none;
     font-family: 'Raleway', sans-serif;
     font-size: larger;
@@ -104,40 +94,6 @@ main{
     visibility: visible;
     opacity: 1;
 }
-
-/* nav li{
-    z-index:10;
-    display: inline-block;
-   
-}
-nav a {    
-    font-family: 'Raleway', sans-serif;
-    font-size: 1em;
-    text-align: center;
-    padding: 25px 15px;
-    display:block;
-    transition: 0.5s ease-in-out;
-}
-nav a:hover {
-    background-color:#E08582;
-    transition: 1.8s ease-in-out;
-
-    display: block;
-    padding: 15px;
-    color: lightpink;
-    font-family: 'Fredoka One', cursive;
-    text-decoration: none;
-}
-nav a:visited {
-    color: rgb(255, 255, 255);
-}
-nav a.active {
-    background-color:#E08582;
-    color: rgb(255, 255, 255);
-} */
-
-
-
 #portada {
     height: 100vh;
     width: 100%;
@@ -294,15 +250,6 @@ nav a.active {
     line-height: 1.5rem;
     text-align: left;
 }
-/*.flex-container{
-    margin:0 0 35px 0;
-    padding:0;    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    align-content:space-evenly;
-}*/
 .item{
     /*max-width:350px; */   
     text-align:center;
@@ -365,15 +312,7 @@ hr {
 
 /* ver mas */
 
-.conteiner{
-   
-    margin: 150px auto 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 15px;
-    grid-gap:10px;
-    max-width: 1100px;
-}
+
 .card{
     width: 100%;
     margin: 20px 0;
@@ -413,92 +352,54 @@ margin-top: 15px;
 
 /* informacion */
 
-
-
-@media screen and (min-width:400px) {
-  
-    .conteiner-banner{
-       width: 100%;
-       max-height: 450px;
-       margin-top: 80px;
-
-        display: inline-flex;
-        overflow: auto;
-    
-        background-color:rgb(248, 215, 198);
-        
-       
-    
-    }
-    
-    .A-info{
-        max-width: 50%;
-    }
-    
-    .imgInfo{
-     width: 50%;
-     
-     position: relative;
-     object-fit: cover;
-    }
-    
-    
-    .A-info h1{
-   text-align: center;
-   margin-left: 100px;
+.conteiner-banner{
+    margin-top: 80px;
+    background-color:rgb(248, 215, 198);
+}
+.A-info h1{
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
     font-weight: bolder;
     font-size: 40px;
-    line-height: 70px;
-    font-family: 'Quicksand', sans-serif;
-    
-    }
-    
-    .A-info p{
-       
-        margin-top: 15px;
-        margin-left: 100px;
-      width: 80%;
-        line-height: 30px;
-        font-size: 20px;
-      
-    }
-
+    padding: 0.2em 2em 0em 2em;
+}
+.A-info p{
+    padding: 0em 1.5em 0em 1.5em;
+    text-align: left;
+    margin-top: 15px;
+    line-height: 30px;
+    font-size: 20px;
+}
 .conteiner-info { 
-
-    width: 100%;
+    padding: 4em 0em;
+    /*
     display: flex;
-justify-content: space-evenly;
-margin-top:80px ;
-overflow: auto;
+    justify-content: space-evenly;
+    overflow: auto;
     white-space: wrap;
-    text-overflow: ellipsis
-
+    text-overflow: ellipsis*/
 }
 .conteiner-info-2{
-
-width: 50%;
-max-height: 500px;
-margin-left: 70px;
-font-family: 'Tiro Telugu', serif;
-
+    font-family: 'Tiro Telugu', serif;
+    padding: 0em 2em 2em 2em;
+    /*width: 50%;
+    max-height: 500px;
+    margin-left: 70px;*/
 }
 .conteiner-info-2 h2{
-color:#D7AECB ;
-text-shadow: 1px 1px 1px #B555AA ;
+    color:#D7AECB ;
+    text-shadow: 1px 1px 1px #B555AA ;
 }
-.img2{
-width: 50%;
-
-    
+/*.img2{
+    width: 50%;
 }
 .img2 img{
-   width: 400px;
+    width: 400px;
     max-width: 400px;
     max-height: 300px;
     object-fit: cover;
     margin-left: 80px;
-}
-}
+}*/
 
 /* cards animadas */
 
@@ -507,57 +408,39 @@ width: 50%;
     src: url(./letra2.ttf )
 }
 
-
-
 .conteiner-tit {
-
-padding: 30px 15px;
-margin: 0 auto;
-text-align: center;
-
+    padding: 30px 15px;
+    margin: 0 auto;
+    text-align: center;
     font-size: 35px;
     font-family: letra ;
     font-size: bold;
-   
     color: black;
-    
-
-
 }
 .h2-1::first-letter{
     color: #B555AA;
 }
 .h2-1{
-   
- 
     font-size: bold; 
 }
 .h2-2{
-   
-  
     color:rgb(100,180,177);
     font-size: bold;
 }
 
 strong{
-     font-size: 17px;
+    font-size: 17px;
 }
-
-
 .conteiner-card{
-width: 100%;
-margin: auto;
-margin-top: 50px;
-perspective: 600px;
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em 3em ;
+    /*margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;*/
 }
-
 .card-father{
-    margin: 50px;
-   
-
+    padding: 0.5em ;
 }
 .card-father:hover .card2{
     transform: rotateY(180deg);
@@ -565,7 +448,6 @@ flex-wrap: wrap;
 .card2{
     width: 300px;
     height: 350px;
-    position: relative;
     transform-style:preserve-3d;
     transition: all ease 600ms;
 }
@@ -573,16 +455,14 @@ flex-wrap: wrap;
    background-size: cover;
    background-position: center;
 }
-
 .card-front , .card-back{
     width: 100%;
     height: 100%;
     position: absolute;
-top: 0;
-left: 0;
-backface-visibility: hidden;
-transform-style: preserve-3d;
-
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
 }
 .card-back{
     transform: rotateY(180deg);
@@ -611,7 +491,6 @@ transform-style: preserve-3d;
 }
 .body-card-back{
 padding: 15px;
-
 }
 .body-card-back p{
     margin-top: 20px; 
@@ -926,8 +805,6 @@ footer img:hover {
     color: lightpink;
 }
 
-
-
 /*Media queries*/
 [class*="col-"]{
     float: left;
@@ -949,6 +826,14 @@ footer img:hover {
     .bloque-img {
         margin: 0
     }
+    /*Aprender*/
+    .card-padd{padding: 0em 1em;}
+    /*info de pieles*/
+    .A-info p{ padding-bottom: 2em;}
+    /*Pieles*/
+    .conteiner-banner{
+        margin-top: 9em;
+    }
     /*TEST*/
     .t-backg {padding: 10em 0em 1em;}
     .t-s-marg{
@@ -969,6 +854,15 @@ footer img:hover {
     .col-10 {width : 83.33%;}
     .col-11 {width : 91.66%;}
     .col-12 {width : 100%;}
+    /*Aprender*/
+    .conteiner{
+        margin: 100px auto 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px;
+        grid-gap:10px;
+        max-width: 1100px;
+    }
     /*TEST*/
     .t-s-marg{
         border-right: 3px solid #BE837F; border-left: 3px solid #BE837F;
@@ -991,7 +885,10 @@ footer img:hover {
     .col-sm-11 {width : 91.66%;}
     .col-sm-12 {width : 100%;}
 }
-
+/*info de pieles*/
+@media only screen and (max-width: 1100px){
+    .col-intm-12 {width : 100%;}
+}
 .pielSensibleFactores ul{
 list-style-type: disc;
 list-style-position: inside;
