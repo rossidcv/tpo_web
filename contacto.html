@@ -30,20 +30,20 @@
          <p class="texto" >Completa el formulario con tu consulta y te contestaremos a la brevedad.<br><strong>(*) Datos requeridos</strong></p>
 
          <div class="container">
-            <form id= "form" class="estilo-formulario" action="/messages" accept-charset="UTF-8" method="post" id="formulario">
+            <form id= "form" class="estilo-formulario"  action="https://formspree.io/f/mjvzevzl" method="POST" id="formulario">
                <div class="row">
                   <div class="col-md-6">
                      <label for="nombre" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Nombre:<strong>(*)</strong></label>
-                     <input class="form-control" type="text" id="nombre" placeholder="Ingresá tu nombre" required>
+                     <input class="form-control" type="text" id="nombre" placeholder="Ingresá tu nombre" name="nombre" required>
 
                      <label for="apellido" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Apellido: </label>
-                     <input class="form-control" type="text" id="apellido" placeholder="Ingresá tu apellido"> 
+                     <input class="form-control" type="text" id="apellido" placeholder="Ingresá tu apellido" name="apellido"> 
 
                      <label for="email" class="form-label"><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>Email: <strong>(*)</strong></label>
-                     <input class="form-control" type="email" id="email" placeholder="Ingresá tu email" required> 
+                     <input class="form-control" type="email" id="email" placeholder="Ingresá tu email" name="email" required> 
 
                      <label for="tel" class="form-label"><i class="fa-solid fa-mobile-retro"></i>Teléfono: <strong>(*)</strong></label>
-                     <input class="form-control" type="tel" maxlength="15" id="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" required> 
+                     <input class="form-control" type="tel" maxlength="15" id="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono" required> 
 
                      <label for="form-check-input" class="form-label">Sos profesional</label>
                      <p>
@@ -61,7 +61,7 @@
                      </select>
 
                      <label for="mensaje" class="form-label"><i class="fa-solid fa-wand-magic-sparkles"></i>Mensaje <strong>(*)</strong></label>
-                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " required></textarea>
+                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " name="mensaje" required></textarea>
 
                      <input class="button" type="submit" value="ENVIAR MENSAJE">
                      <button type="reset" class="reset">BORRAR DATOS</button>
