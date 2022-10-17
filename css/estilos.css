@@ -377,6 +377,24 @@ margin-top: 15px;
     justify-content: space-evenly;
     overflow: auto;
     white-space: wrap;
+<<<<<<< HEAD
+ 
+
+}
+.conteiner-info-2{
+
+width: 50%;
+max-height: 500px;
+margin-left: 50px;
+flex-wrap: wrap;
+font-family: 'Tiro Telugu', serif;
+
+}
+.conteiner-info-2 h2{
+color:#D7AECB ;
+width: 50%;
+text-shadow: 1px 1px 1px #B555AA ;
+=======
     text-overflow: ellipsis*/
 }
 .conteiner-info-2{
@@ -389,17 +407,27 @@ margin-top: 15px;
 .conteiner-info-2 h2{
     color:#D7AECB ;
     text-shadow: 1px 1px 1px #B555AA ;
+
 }
 /*.img2{
     width: 50%;
 }
 .img2 img{
     width: 400px;
+<<<<<<< HEAD
+   max-width: 400px;
+    object-fit: cover;
+    margin-left: 80px;
+  
+}
+}
+=======
     max-width: 400px;
     max-height: 300px;
     object-fit: cover;
     margin-left: 80px;
 }*/
+
 
 /* cards animadas */
 
