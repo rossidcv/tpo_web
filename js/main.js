@@ -1,35 +1,28 @@
 sup=`
    <header>
-      <div>
-         <div class="col-4 col-m-12">
-            <a class="brand" href="index.html"><img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare</a>
-         </div>
-         <div class="col-8 col-m-12" >
-            <ul class="menu">
-               <div class="col-3 col-m-3 menu-pad" >
-                  <li class="menu-li"><a href="index.html" class="menu-a">Inicio</a></li>
-               </div>
-               <div class="col-3 col-m-3 menu-pad">
-                  <li class="menu-li" ><a href="ver-mas.html" class="menu-a">Aprender</a>
-                     <ul class="submenu">
-                        <li class="submenu-li" ><a href="./piel-Mixta.html" class="submenu-a">Piel Mixta</a></li>
-                        <li class="submenu-li" ><a href="./piel-grasa.html" class="submenu-a">Piel Grasa</a></li>
-                        <li class="submenu-li" ><a href="./piel-seca.html" class="submenu-a">Piel Seca</a></li>
-                        <li class="submenu-li" ><a href="./piel-sensible.html" class="submenu-a">Piel Sensible</a></li>
-                        <li class="submenu-li" ><a href="./envejecimiento.html" class="submenu-a">Envejecimiento</a></li>
-                        <li class="submenu-li" ><a href="./Piel-con-acne.html" class="submenu-a">Con Acne</a></li>
-                     </ul>
-                  </li>
-               </div>
-               <div class="col-3 col-m-3 menu-pad">
-                  <li class="menu-li"><a href="./test.html" class="menu-a">Test de piel</li>
-               </div>
-               <div class="col-3 col-m-3 menu-pad ">
-                  <li class="menu-li" ><a href="contacto.html" class="menu-a" >Contacto</a></li>
-               </div>
-         </div>  
+      <div>         
+         <a class="brand" href="index.html"><img src="./css/imagenes/brand.png" width="55" alt="logo">Skincare</a>
+         <input type="checkbox" id="check">
+         <label for="check" class="checkbtn">            
+            <span id="menu-abrir">&#9776;</span>
+            <span id="menu-cerrar">X</span>
+         </label>
+         <ul class="menu">               
+            <li class="menu-li"><a href="index.html" class="menu-a">Inicio</a></li>              
+            <li class="menu-li" ><a href="ver-mas.html" class="menu-a">Aprender</a>
+               <ul class="submenu">
+                  <li class="submenu-li" ><a href="./piel-Mixta.html" class="submenu-a">Piel Mixta</a></li>
+                  <li class="submenu-li" ><a href="./piel-grasa.html" class="submenu-a">Piel Grasa</a></li>
+                  <li class="submenu-li" ><a href="./piel-seca.html" class="submenu-a">Piel Seca</a></li>
+                  <li class="submenu-li" ><a href="./piel-sensible.html" class="submenu-a">Piel Sensible</a></li>
+                  <li class="submenu-li" ><a href="./envejecimiento.html" class="submenu-a">Envejecimiento</a></li>
+                  <li class="submenu-li" ><a href="./Piel-con-acne.html" class="submenu-a">Con Acne</a></li>
+               </ul>
+            </li>               
+            <li class="menu-li"><a href="./test.html" class="menu-a">Test de piel</a></li>
+            <li class="menu-li" ><a href="contacto.html" class="menu-a" >Contacto</a></li>
+         </ul>
       </div>
-
    </header>
 `
 document.write(sup)
@@ -64,6 +57,8 @@ sup=`
 document.write(sup)
 
 
+
+/*
 // formulario de contacto
 
 const $form= document.querySelector('#form')
@@ -85,3 +80,84 @@ $form.addEventListener('submit', handlesubmit)
       alert('Gracias por contactarte con nosotros, te responderemos pronto')
    }
 }
+*/
+
+// Validar formulario
+
+function validarform() {
+
+   let nombre = document.getElementById("nombre").value; 
+   let apellido = document.getElementById("apellido").value;
+   let email = document.getElementById("email").value;
+   let tel = document.getElementById("tel").value;
+   let consulta = document.getElementById("consulta").value;
+   var mensaje = document.getElementById("mensaje").value;
+   
+   
+   // Validar nombre
+       if (nombre == "") {
+          alert("Por favor escribí tu nombre");
+                 document.form.nombre.focus();
+           return false;
+       }
+   // Validar apellido
+       if (apellido == "") {
+          alert("Por favor escribí tu apellido");
+                document.form.apellido.focus();
+           return false;
+       }
+   
+   // Validar email
+       if(form.email.value.length>0){
+           var patronEmail=/^[^@\s]+@[^@\.\s]+(\.[^@\.\s]+)+$/;       
+           if (!(patronEmail.test(form.email.value))) {
+               alert('El email no tiene un formato valido!');
+               return false; 
+           }         
+       }else{
+           alert('Por favor escribí tu Email');
+           document.form.email.focus();
+           return false;            
+       }
+   
+   // Validar teléfono
+       if(form.tel.value.length>0){
+            var patrontel=/(^([0-9]{0,15})|^)$/;
+           if (!(patrontel.test(form.tel.value))) {
+               alert('Contenido no válido. Rellená este campo con números');
+               return false; 
+           }         
+       }else{
+           alert("Por favor escribí tu Teléfono");
+           document.form.tel.focus();
+           return false;            
+       }
+   
+   // Validar profesión
+      if(!document.querySelector('input[name="professional"]:checked')) {
+         alert('Error, selecciona las opciones de profesión');
+         document.form.consulta.focus();
+         return false;     
+      }
+   
+   // Validar motivo de consulta
+      if (form.consulta.selectedIndex==0){
+          alert("Selecciona un motivo de su consulta.");
+          document.form.consulta.focus();
+          return false;
+       }
+   
+   // Validar mensaje
+      if( mensaje  == null || mensaje .length == "0" || /^\s+$/.test(mensaje) ) {
+         alert("Por favor escribí tu consulta.");
+         document.form.mensaje .focus();        
+         return false;
+      }
+   
+   //el formulario se envia
+    alert("Muchas gracias por enviar el formulario");
+       document.form.enviar();
+   
+   }    
+   
+   
