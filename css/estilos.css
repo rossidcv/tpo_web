@@ -15,12 +15,12 @@ ul {
 header {
 
     text-align: center;
-    background-color: rgba(188,132,126,0.5);
+    background-color: rgba(188,132,126,0.8);
     position: fixed;
     top: 0; left: 0; right: 0;  
-    padding: 0.5em 2em 0em 2em;  
+    padding:0em 2em 0em 2em;  
+    z-index: 10;
 }
-
 
 
 .brand {
@@ -28,7 +28,11 @@ header {
     font-size: 2em; 
     display: inline-flex;
     align-items: center;
-    transition: 0.5s ease-in-out;    
+    transition: 0.5s ease-in-out;
+    position: relative;
+    top: 10px;  
+    float: left;
+    padding-left: 60px;    
 }
 
 .brand:hover {
@@ -36,10 +40,14 @@ header {
     color: white;
     transition: 0.8s ease-in-out;
 }
+ul.menu {
+    float: right;
+}
 .menu-li {
     position: relative;
     list-style: none;
-
+    display: inline-block;
+    line-height: 75px;
 }
 .menu-pad{
     padding: 20px 0px;
@@ -49,6 +57,7 @@ header {
     font-family: 'Raleway', sans-serif;
     font-size: larger;
     text-decoration: none;
+    padding: 0 55px;
 }
 
 .menu-a:hover {
@@ -64,13 +73,15 @@ header {
     visibility: hidden;
     opacity: 0;
     transition: opacity 1.5s;
-    width: 100%;
+    width: 220px;
     z-index: 1000;
     list-style: none;
     padding: 0%;
 
 }
-
+.submenu-li {
+    line-height: 20px;
+}
 .submenu-a {
     display: block;
     padding: 15px;
@@ -78,11 +89,45 @@ header {
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
 }
-
+.submenu-a:hover {
+    color: lightpink;
+}
 .menu-li:hover .submenu {
     visibility: visible;
     opacity: 1;
 }
+
+/*menú Hamburguesa*/
+#check:not(:checked) ~ nav {
+    display: none;
+}
+#check:checked  ~ nav {
+    display: block;
+}
+#menu-cerrar {
+    display: none;
+}
+#menu-abrir {
+    color: #fff;
+}
+#check:checked  ~ label #menu-abrir{
+    display: none;
+}
+#check:checked  ~ label #menu-cerrar{
+    display: block;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
 #portada {
     height: 100vh;
     width: 100%;
@@ -296,7 +341,9 @@ hr {
 
 /* ver mas */
 
-
+.conteiner {
+    margin-top:100px;
+}
 .card{
     width: 100%;
     margin: 20px 0;
@@ -326,18 +373,17 @@ object-fit: cover;
 }
 .card .contenido p{
     line-height: 1.5;
-    width: 100%;
-    
-height: 200px;
-overflow: hidden;
-margin-top: 15px;
+    width: 100%;    
+    height: 200px;
+    overflow: hidden;
+    margin-top: 15px;
 
 }
 
 /* informacion */
 
 .conteiner-banner{
-    margin-top: 80px;
+    margin-top: 75px;
     background-color:rgb(248, 215, 198);
   
    
@@ -352,6 +398,7 @@ object-fit: cover;
     font-weight: bolder;
     font-size: 40px;
     padding: 1.5em 2em 0.2em 2em;
+    color:grey;
 
  
 }
@@ -361,8 +408,7 @@ object-fit: cover;
      margin-top: 15px; 
     line-height: 30px;
     font-size: 21px;
-  
-  
+    color:grey;  
 }
 .conteiner-info { 
     padding: 4em 0em;
@@ -372,11 +418,11 @@ object-fit: cover;
 .conteiner-info-2{
     font-family: 'Tiro Telugu', serif;
     padding: 0em 2em 2em 2em;
+    color:grey;
 }
 .conteiner-info-2 h2{
     color:#D7AECB ;
     text-shadow: 1px 1px 1px #B555AA ;
-
 }
 
 
@@ -431,7 +477,6 @@ strong{
     transform: rotateY(180deg);
 }
 .card2{
-    width: 300px;
     height: 350px;
     transform-style:preserve-3d;
     transition: all ease 600ms;
@@ -483,7 +528,17 @@ padding: 15px;
     color: #ffffff;
     background-color: lightpink
 }
+/*info de pieles*/
 
+.pielSensibleFactores ul{
+    list-style-type: disc;
+    list-style-position: inside;
+    color: rgb(100,180,177) ;
+}
+    
+.pielSensibleFactores span{
+    color: grey;
+}
 
 /*Contacto*/
 .encabezado {
@@ -624,14 +679,13 @@ iframe {
     color:#c78590 ;
     text-align: center;
     font-size: 1.5em;
-    padding: 0.5em 0.5em 0em;
+    padding: 0 0.5em 0.5em;
 
 }
 .t-steps-txt{
     font-family: 'Raleway', sans-serif;
     color: #c48783;
     font-weight: 600;
-    padding: 0.5em;
 }
 .t-steps-bkg{
     background-color: #ebbac1;
@@ -657,8 +711,10 @@ iframe {
     color: #ac747d;
     border: 1px solid #BE837F ;
     border-radius: 5px;
-    padding: 0.2em 5em;
+    padding: 0.375rem 5em;
     background-color:#f7e6e6 ;
+    margin-top:10px;
+    width:300px;
 }
 .t-e-btn{
     padding: 1em 0em;
@@ -673,11 +729,14 @@ iframe {
     border: 1px solid  #BE837F;
     background-color: #ebbac1;
     border-radius: 5px;
+    cursor:pointer;
 }
 .t-btn:hover{
     background-color: #f4cccc;
 }
-
+.pad-test {
+    padding: 20px;
+}
 /*Resultados del test*/
 .t-warn{
     background-color:#f6d6d6;
@@ -743,6 +802,11 @@ footer {
     align-items: center;
     align-content: space-around;
 }
+footer .brand {
+    float: none;
+    padding-left:0;
+    top:0;
+}
 footer img:hover {
     transform: scale(1.1, 1.1);
     transition: 0.8s ease-in-out;
@@ -794,6 +858,16 @@ footer img:hover {
 [class*="col-"]{
     float: left;
 }
+
+@media only screen and (max-width: 1100px){
+    .col-intm-12 {width : 100%;}
+    .brand {
+        padding-left: 0px;
+    }
+    .menu-a {
+        padding: 0 45px;
+    }
+}
 @media only screen and (max-width: 992px){
     .col-m-1 {width : 8.33%;} 
     .col-m-2 {width : 16.66%;}
@@ -811,14 +885,53 @@ footer img:hover {
     .bloque-img {
         margin: 0
     }
+    /*Menú Hamburguesa*/
+    input#abrir-cerrar { visibility:hidden; position: absolute; top: -9999px; }
+    input#abrir-cerrar:checked ~ #sidebar {
+        width:300px;
+    }
+    input#abrir-cerrar:checked + .menu-a[for="abrir-cerrar"], input#abrir-cerrar:checked ~ #contenido {
+        margin-left:300px;
+        transition: margin-left .4s;
+    }
+    input#abrir-cerrar:checked + .menu-a[for="abrir-cerrar"] .cerrar { 
+        display:inline;
+    }
+    input#abrir-cerrar:checked + .menu-a[for="abrir-cerrar"] .abrir {
+        display:none;
+    }
+    .checkbtn{
+        display: block;
+    } 
+    /*submenu*/
+    .submenu {
+        display: none;
+    }
+    .menu-li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    ul.menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #E08582;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    #check:checked ~ ul {
+        left: 0;
+    }   
     /*Aprender*/
     .card-padd{padding: 0em 1em;}
+    .conteiner-card {padding:1.5em;}
     /*info de pieles*/
+    .A-info h1 {padding: 1.5em 0em 0.2em 0em;}
     .A-info p{ padding-bottom: 2em;}
-    /*Pieles*/
-    .conteiner-banner{
-        margin-top: 9em;
-    }
+    .img2 img {max-width: 100%;}
     /*TEST*/
     .t-backg {padding: 10em 0em 1em;}
     .t-s-marg{
@@ -869,17 +982,7 @@ footer img:hover {
     .col-sm-10 {width : 83.33%;}
     .col-sm-11 {width : 91.66%;}
     .col-sm-12 {width : 100%;}
-}
-/*info de pieles*/
-@media only screen and (max-width: 1100px){
-    .col-intm-12 {width : 100%;}
-}
-.pielSensibleFactores ul{
-list-style-type: disc;
-list-style-position: inside;
-color: rgb(100,180,177) ;
-}
-
-.pielSensibleFactores span{
-    color: black;
+    .t-input {
+        width:100%;
+    }
 }
