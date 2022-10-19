@@ -71,7 +71,7 @@ $form.addEventListener('submit', handlesubmit)
 
  async function handlesubmit(event){
    event.preventDefault()   //evita que recargue la pagina
-   const form= new FormData(this)  // guarda los atos del formulario
+   const form= new FormData(this)  // guarda los datos del formulario
   const response= await fetch(this.action,{
       method:this.method,
       body: form,
