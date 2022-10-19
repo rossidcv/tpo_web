@@ -30,40 +30,40 @@
          <p class="texto" >Completa el formulario con tu consulta y te contestaremos a la brevedad.<br><strong>(*) Datos requeridos</strong></p>
 
          <div class="container">
-            <form id= "form" class="estilo-formulario"  action="https://formspree.io/f/mjvzevzl" method="POST" id="formulario" gitHub>
+            <form id= "form" class="estilo-formulario"  accept-charset="UTF-8" action="" method="POST" name="form" onsubmit="return validarform();">
                <div class="row">
                   <div class="col-md-6">
                      <label for="nombre" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Nombre:<strong>(*)</strong></label>
-                     <input class="form-control" type="text" id="nombre" placeholder="Ingresá tu nombre" name="nombre" required>
+                     <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" name="nombre">
 
                      <label for="apellido" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Apellido: </label>
-                     <input class="form-control" type="text" id="apellido" placeholder="Ingresá tu apellido" name="apellido"> 
+                     <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" name="apellido"> 
 
                      <label for="email" class="form-label"><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>Email: <strong>(*)</strong></label>
-                     <input class="form-control" type="email" id="email" placeholder="Ingresá tu email" name="email" required> 
+                     <input class="form-control" type="email" id="email" name="email" placeholder="Ingresá tu email" name="email"> 
 
                      <label for="tel" class="form-label"><i class="fa-solid fa-mobile-retro"></i>Teléfono: <strong>(*)</strong></label>
-                     <input class="form-control" type="tel" maxlength="15" id="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono" required> 
+                     <input class="form-control" type="tel" maxlength="15" id="tel" name="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono"> 
 
-                     <label for="form-check-input" class="form-label">Sos profesional</label>
+                     <label for="professional" class="form-label">Sos profesional</label>
                      <p>
-                        <input class="form-check-input" type="radio" name="professional" value="hombre" checked>Si
-                        <input class="form-check-input" type="radio" name="professional" value="Mujer">No
+                        <input class="form-check-input" type="radio" name="professional" value="Si">Si
+                        <input class="form-check-input" type="radio" name="professional" value="No">No
                      </p> 
                   </div>
 
                   <div class="col-md-6">
                      <label for="exampleFormControlInput1" class="form-label"><i class="fa-solid fa-magnifying-glass-chart"></i>Motivo de consulta</label>
-                     <select class="form-select" name="consulta">
+                     <select class="form-select" name="consulta" id="consulta">Seleccionar
                         <option value="sugerencia">Sugerencia</option>
                         <option value="informacion">Solicitud de información</option>
                         <option value="motivo">Otro motivo</option>
                      </select>
 
                      <label for="mensaje" class="form-label"><i class="fa-solid fa-wand-magic-sparkles"></i>Mensaje <strong>(*)</strong></label>
-                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " name="mensaje" required></textarea>
+                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " name="mensaje"></textarea>
 
-                     <input class="button" type="submit" value="ENVIAR MENSAJE">
+                     <input type="enviar" id="enviar" class="button" value="ENVIAR MENSAJE" onclick="validarform()">
                      <button type="reset" class="reset">BORRAR DATOS</button>
                   </div>              
                </div> 
