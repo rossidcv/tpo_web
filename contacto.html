@@ -11,6 +11,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
    <!-- Iconos -->  
    <script src="https://kit.fontawesome.com/0e1536cc0c.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/c83606367c.js" crossorigin="anonymous"></script>
    <link rel="icon" href="./css/imagenes/brand.png" type="image/x-icn">
    <!-- JavaScript -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
@@ -30,26 +31,46 @@
          <p class="texto" >Completa el formulario con tu consulta y te contestaremos a la brevedad.<br><strong>(*) Datos requeridos</strong></p>
 
          <div class="container">
-            <form id= "form" class="estilo-formulario"  accept-charset="UTF-8" action="" method="POST" name="form" onsubmit="return validarform();">
+            <form id= "form" class="estilo-formulario"  accept-charset="UTF-8" action="https://formspree.io/f/mjvzevzl" method="POST"  name="form" >
                <div class="row">
                   <div class="col-md-6">
-                     <label for="nombre" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Nombre:<strong>(*)</strong></label>
-                     <input class="form-control" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" name="nombre">
+                     <div id="grupo__nombre">
+                     <label for="nombre" class="form-label formulario__label"><i class=" formulario__validacion-estado fa-sharp fa-solid fa-user "></i>Nombre:<strong>(*)</strong></label>      
+                     <input class="form-control formulario__input" type="text" id="nombre" name="nombre" placeholder="Ingresá tu nombre" name="nombre" >
+                     
+                     <p class="formulario__input-error">El nombre solo puede contener letras espacios o acentos</p>
+                  </div>
+              
 
-                     <label for="apellido" class="form-label"><i class="fa-sharp fa-solid fa-user"></i>Apellido: </label>
-                     <input class="form-control" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" name="apellido"> 
+                  <div id="grupo__apellido">
+                     <label for="apellido" class="form-label  formulario__label"><i class="fa-sharp fa-solid fa-user formulario__validacion-estado"></i>Apellido: </label>
+                     <input class="form-control formulario__input" type="text" id="apellido" name="apellido" placeholder="Ingresá tu apellido" name="apellido"> 
+                     <p class="formulario__input-error">El apellido solo puede contener letras espacios o acentos</p>
+                  
+               </div>
 
-                     <label for="email" class="form-label"><i class="fa-sharp fa-solid fa-envelope-circle-check"></i>Email: <strong>(*)</strong></label>
-                     <input class="form-control" type="email" id="email" name="email" placeholder="Ingresá tu email" name="email"> 
+               
+                  <div id="grupo__email">
+                     <label for="email" class="form-label  formulario__label"><i class="fa-sharp fa-solid fa-envelope-circle-check formulario__validacion-estado"></i>Email: <strong>(*)</strong></label>
+                     <input class="form-control formulario__input" type="email" id="email" name="email" placeholder="Ingresá tu email" name="email"> 
+                     <p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo</p>
+                  </div>
+              
 
-                     <label for="tel" class="form-label"><i class="fa-solid fa-mobile-retro"></i>Teléfono: <strong>(*)</strong></label>
-                     <input class="form-control" type="tel" maxlength="15" id="tel" name="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono"> 
+             
+                  <div id="grupo__tel">
+                     <label for="tel" class="form-label  formulario__label"><i class="fa-solid fa-mobile-retro formulario__validacion-estado"></i>Teléfono: <strong>(*)</strong></label>
+                     <input class="form-control formulario__input" type="tel" maxlength="15" id="tel" name="tel" placeholder="(Código de area + teléfono)" title="Ej: 01100000000" name="telefono"> 
+                     <p class="formulario__input-error">El telefono solo puede contener numeros y el maximo es 14 digitos</p>
+                  </div>
+               
 
                      <label for="professional" class="form-label">Sos profesional</label>
                      <p>
-                        <input class="form-check-input" type="radio" name="professional" value="Si">Si
-                        <input class="form-check-input" type="radio" name="professional" value="No">No
+                        <input class="form-check-input" type="radio" name="professional" value="Si" required>Si
+                        <input class="form-check-input" type="radio" name="professional" value="No" required>No
                      </p> 
+                     <p class="formulario__input-error">Debes tildar una opción</p>
                   </div>
 
                   <div class="col-md-6">
@@ -61,12 +82,21 @@
                      </select>
 
                      <label for="mensaje" class="form-label"><i class="fa-solid fa-wand-magic-sparkles"></i>Mensaje <strong>(*)</strong></label>
-                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " name="mensaje"></textarea>
+                     <textarea class="form-control color" rows="7" id="mensaje" aria-label="With textarea" placeholder="Ingresá tu mensaje " name="mensaje" required></textarea>
 
-                     <input type="enviar" id="enviar" class="button" value="ENVIAR MENSAJE" onclick="validarform()">
+                     <input type="submit" id="enviar" class="button" value="ENVIAR MENSAJE" onclick="validarform()">
                      <button type="reset" class="reset">BORRAR DATOS</button>
-                  </div>              
+                     <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado</p>
+                  </div>  
+                       
                </div> 
+
+               <div>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado</p>
+               </div>
+               <div class="formulario__mensaje" id="formulario__mensaje">
+                 <p><i class="fa-solid fa-circle-exclamation"></i><b>Error:</b> favor rellena el formulario correctamente</p>
+               </div>
             </form>
          </div>
       </div>
@@ -83,6 +113,7 @@
    </main>
   
 
+   <script src="./js/formulario.js"></script>
    <script src="./js/main.js" ></script>
 </body>
 </html>
