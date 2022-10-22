@@ -21,8 +21,6 @@ header {
     padding:0em 2em 0em 2em;  
     z-index: 10;
 }
-
-
 .brand {
     font-family: 'Raleway', sans-serif; 
     font-size: 2em; 
@@ -77,7 +75,6 @@ ul.menu {
     z-index: 1000;
     list-style: none;
     padding: 0%;
-
 }
 .submenu-li {
     line-height: 20px;
@@ -219,7 +216,6 @@ ul.menu {
     margin: 0 auto;
     animation: animation 2.5s ease-out;
 }  
-
 .ver{
     font-family: 'Raleway', sans-serif;
     font-size: 1.2em;
@@ -353,16 +349,15 @@ hr {
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
     cursor: default;
     transition: all 400ms ease;
-
 }
 .card:hover{
     box-shadow: 5px 5px 20px rgba(0,0,0,0.4); 
     transform: translateY(-3%);
 }
 .card img{
-width: 100%;
-height: 150px;
-object-fit: cover;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 .card .contenido{
     padding: 15px;
@@ -377,7 +372,6 @@ object-fit: cover;
     height: 200px;
     overflow: hidden;
     margin-top: 15px;
-
 }
 
 /* informacion */
@@ -385,13 +379,10 @@ object-fit: cover;
 .conteiner-banner{
     margin-top: 75px;
     background-color:rgb(248, 215, 198);
-  
-   
 }
 .imgInfo{
-object-fit: cover;
+    object-fit: cover;
 }
-
 .A-info h1{
     font-family: 'Quicksand', sans-serif;
     text-align: center;
@@ -399,8 +390,6 @@ object-fit: cover;
     font-size: 40px;
     padding: 1.5em 2em 0.2em 2em;
     color:grey;
-
- 
 }
 .A-info p{
     padding: 0em 1.5em 0em 1.5em;
@@ -412,8 +401,6 @@ object-fit: cover;
 }
 .conteiner-info { 
     padding: 4em 0em;
-
-
 }
 .conteiner-info-2{
     font-family: 'Tiro Telugu', serif;
@@ -424,14 +411,9 @@ object-fit: cover;
     color:#D7AECB ;
     text-shadow: 1px 1px 1px #B555AA ;
 }
-
-
 .img2 img{
-
    max-width: 500px;
    object-fit: cover;
-    
-  
 }
 
 
@@ -682,7 +664,6 @@ iframe {
     text-align: center;
     font-size: 1.5em;
     padding: 0 0.5em 0.5em;
-
 }
 .t-steps-txt{
     font-family: 'Raleway', sans-serif;
@@ -935,7 +916,6 @@ footer img:hover {
     .A-info p{ padding-bottom: 2em;}
     .img2 img {max-width: 100%;}
     /*TEST*/
-    .t-backg {padding: 10em 0em 1em;}
     .t-s-marg{
         border-top: 3px solid #BE837F; border-bottom: 3px solid #BE837F;
     } 
